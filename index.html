@@ -3,15 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My To-Do List</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Shoping list</h1>
-    <h3>For todays party.</h3>
-    <input id="userinput" type="text" placeholder="Enter items" />
-    <button id="add">Add task</button>
-    <ul></ul>
+    <h1 id="heading">To-Do List</h1>
+    <input id="ListName" type="text" placeholder="Enter List name" />
+    <button id="AddListBtn">Add List</button>
+    <div class="ListContainer">
+      <!-- <div class="ListCard">
+        <div class="ListHead">
+          <h3>List One is Here</h3>
+          <button class="CrossListBtn">X</button>
+        </div>
+        <div class="ListBody">
+          <input class="TaskInput" type="text" placeholder="Enter Task" />
+          <button class="AddTaskBtn">Add task</button>
+          <ul></ul>
+        </div>
+      </div> -->
+    </div>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

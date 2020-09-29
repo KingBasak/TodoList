@@ -1,25 +1,82 @@
-.done {
-  text-decoration: line-through;
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+body {
+  font-size: 3rem;
+  text-align: center;
+  background-image: url(pics/Background.jpg);
+}
+input {
+  border-radius: 0.5rem;
+}
+button {
+  border-radius: 0.5rem;
+}
+#heading {
+  font-size: 6rem;
+  padding: 5rem 0 1rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+.ListContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
 }
 
-.DoneBtn {
-  background-color: greenyellow;
-  padding: 0 0 2px 0;
-  margin: 3px 5px;
+.ListCard {
+  border: black solid 0.3rem;
+  border-radius: 2rem;
+  background-color: rgba(122, 129, 129, 0.6);
+  margin: 3rem;
 }
-
-.DelBtn {
+.ListHead {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black solid 0.3rem;
+}
+h3 {
+  text-align: center;
+  margin: auto;
+  font-size: 4rem;
+  color: rgb(27, 41, 49);
+}
+.CrossListBtn {
+  display: block;
+  width: 3.7rem;
+  max-height: 3.7rem;
+  font-size: 2rem;
   background-color: red;
-  padding: 0 0 2px 0;
-  margin: 3px 5px;
+  padding: 0.5rem;
+  margin-left: auto;
+  border-radius: 50%;
 }
-
-li {
-  list-style: none;
-  font-size: 20px;
+.ListBody {
+  font-size: 3rem;
   font-weight: bold;
 }
-
-.complete {
-  text-decoration: line-through red;
+.TaskDoneBtn {
+  background-color: greenyellow;
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem 1rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.TaskDeleteBtn {
+  background-color: rgb(238, 73, 73);
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.5rem 1rem 2rem;
+  border-radius: 0.5rem;
+}
+li {
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+.TaskComplete {
+  text-decoration: line-through rgb(238, 73, 73);
+}
+.AddTaskBtn {
+  margin: 1.5rem;
 }
